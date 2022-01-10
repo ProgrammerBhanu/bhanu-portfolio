@@ -3,7 +3,7 @@
   <a href="https://portfolio-bhanu-solanki.vercel.app/" target="_blank">Bhanu | Portfolio</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
+  <img alt="Demo" src="https://github.com/ProgrammerBhanu/bhanu-portfolio/blob/main/demo.jpg" />
 </div>
 
 <br/>
