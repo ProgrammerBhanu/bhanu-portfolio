@@ -1,7 +1,8 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import { BiLinkExternal } from "react-icons/bi";
+import { SiGithub } from "react-icons/si";
+import { RiEarthFill } from "react-icons/ri";
 
 function ProjectCards(props) {
   return (
@@ -19,11 +20,11 @@ function ProjectCards(props) {
           href={props.link1}
           target="_blank"
         >
-          <BiLinkExternal /> &nbsp;
-          {props.isBlog ? "View Blog" : "View Project"}
+          <SiGithub /> &nbsp;
+          {props.isBlog ? "View Blog" : "View Source"}
         </Button>
         <Button variant="primary" href={props.link2} size="sm" target="_blank">
-          <BiLinkExternal /> &nbsp;
+          <RiEarthFill /> &nbsp;
           {props.isBlog ? "View Blog" : "Deployment"}
         </Button>
       </Card.Body>
