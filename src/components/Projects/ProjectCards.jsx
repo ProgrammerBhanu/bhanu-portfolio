@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { SiGithub } from "react-icons/si";
+import { Col, Row } from "react-bootstrap";
 import { RiEarthFill } from "react-icons/ri";
 
 function ProjectCards(props) {
@@ -28,6 +29,20 @@ function ProjectCards(props) {
           {props.isBlog ? "View Blog" : "Deployment"}
         </Button>
       </Card.Body>
+      <Row className="tech-row">
+        <Col xs={4} md={4} className="tech-icons1">
+          {props.i1}
+        </Col>
+        <Col xs={4} md={4} className="tech-icons1">
+          {props.i2}
+        </Col>
+        <Col xs={4} md={4} className="tech-icons1">
+          {props.i3}
+        </Col>
+        <Col xs={4} md={4} className="tech-icons1">
+          {props.i4}
+        </Col>
+      </Row>
     </Card>
   );
 }
