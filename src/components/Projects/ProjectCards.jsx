@@ -29,7 +29,7 @@ function ProjectCards(props) {
           {props.isBlog ? "View Blog" : "Deployment"}
         </Button>
       </Card.Body>
-      <Row className="tech-row">
+      <Row style={{padding-bottom:"10px"}} className="tech-row">
         <Col xs={4} md={4} className="tech-icons1">
           {props.i1}
         </Col>
