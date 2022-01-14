@@ -570,6 +570,7 @@ html {
   grid-auto-rows: auto;
   justify-content: space-between;
   padding-left: 7%;
+  margin-bottom: 10px;
 }
 .tech-icons {
   font-size: 4.5em !important;
