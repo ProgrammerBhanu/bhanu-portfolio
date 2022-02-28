@@ -25,7 +25,9 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={mpl}
+              imgPath={
+                "https://rawcdn.githack.com/ProgrammerBhanu/bhanu-portfolio/331756c9838f1aa5ab0843b90bd97ab1aec0ef6b/src/Assets/Projects/mpl.jpg"
+              }
               isBlog={false}
               title="MPL - clone"
               description="Using HTML, CSS, Node.js, Express & MongoDB, I have built a clone of MPL.live. Which allows users to win rewards and cash prizes by playing the games of their choice."
@@ -40,7 +42,9 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={tatacliq}
+              imgPath={
+                "https://rawcdn.githack.com/ProgrammerBhanu/bhanu-portfolio/331756c9838f1aa5ab0843b90bd97ab1aec0ef6b/src/Assets/Projects/tatacliq.jpg"
+              }
               isBlog={false}
               title="Tatacliq - clone"
               description="Using HTML, CSS, Advanced JS & LocalStorage, I have built with group of 4, a clone of Tatacliq-clone where users can buy various products."

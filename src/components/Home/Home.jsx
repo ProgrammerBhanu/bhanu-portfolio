@@ -4,7 +4,7 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import logo from "../../Assets/dp.png";
+// import logo from "../../Assets/dp.png";
 
 function Home() {
   return (
@@ -15,7 +15,9 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <img
-                src={logo}
+                src={
+                  "https://rawcdn.githack.com/ProgrammerBhanu/bhanu-portfolio/331756c9838f1aa5ab0843b90bd97ab1aec0ef6b/src/Assets/dp.png"
+                }
                 style={{ width: "170px" }}
                 className="mydp"
                 alt="Profile"
