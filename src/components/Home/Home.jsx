@@ -4,7 +4,7 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import dp from "../../Assets/dp.png";
+import logo from "../../Assets/dp.png";
 
 function Home() {
   return (
@@ -15,7 +15,7 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <img
-                src={dp}
+                src={logo}
                 style={{ width: "170px" }}
                 className="mydp"
                 alt="Profile"
