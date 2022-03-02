@@ -49,7 +49,7 @@ function Projects() {
               title="Tatacliq - clone"
               description="Using HTML, CSS, Advanced JS & LocalStorage, I have built with group of 4, a clone of Tatacliq-clone where users can buy various products."
               link1="https://github.com/ProgrammerBhanu/TataCliq-Project"
-              link2="https://programmerbhanu.github.io/TataCliq-Project/main.html"
+              link2="https://programmerbhanu.github.io/TataCliq-Project/"
               i1={<TiHtml5 />}
               i2={<DiJavascript1 />}
               i3={<SiCss3 />}
