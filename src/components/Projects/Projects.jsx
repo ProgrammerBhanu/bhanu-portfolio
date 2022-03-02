@@ -9,7 +9,7 @@ import { SiCss3, SiBootstrap, SiRedux } from "react-icons/si";
 import mpl from "../../Assets/Projects/mpl.jpg";
 import tatacliq from "../../Assets/Projects/tatacliq.jpg";
 // import editor from "../../Assets/Projects/codeEditor.png";
-import translator from "../../Assets/Projects/translator2.jpg";
+// import translator from "../../Assets/Projects/translator2.jpg";
 
 function Projects() {
   return (
@@ -58,7 +58,9 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={translator}
+              imgPath={
+                "https://rawcdn.githack.com/ProgrammerBhanu/bhanu-portfolio/331756c9838f1aa5ab0843b90bd97ab1aec0ef6b/src/Assets/Projects/translator2.jpg"
+              }
               isBlog={false}
               title="Meesho - Clone"
               description="Using React, Redux, Node.js, Express.js & MongoDB, I have built with group of 5, a clone of Meesho-clone where users can buy various products."
