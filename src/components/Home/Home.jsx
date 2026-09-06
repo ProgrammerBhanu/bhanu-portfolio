@@ -16,7 +16,10 @@ function Home() {
             <Col md={7} className="home-header">
               <img
                 src={profileImage}
-                style={{ width: "170px" }}
+                style={{
+                  width: "170px",
+                  clipPath: "circle(48% at 50% 50%)",
+                }}
                 className="mydp"
                 alt="Profile"
               />
