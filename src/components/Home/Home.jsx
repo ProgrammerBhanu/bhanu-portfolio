@@ -16,7 +16,7 @@ function Home() {
             <Col md={7} className="home-header">
               <img
                 src={
-                  "https://rawcdn.githack.com/ProgrammerBhanu/bhanu-portfolio/331756c9838f1aa5ab0843b90bd97ab1aec0ef6b/src/Assets/dp.png"
+                  "https://rawcdn.githack.com/ProgrammerBhanu/bhanu-portfolio/331756c9838f1aa5ab0843b90bd97ab1aec0ef6b/src/Assets/dp2.png"
                 }
                 style={{ width: "170px" }}
                 className="mydp"
