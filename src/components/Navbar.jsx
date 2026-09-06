@@ -37,13 +37,8 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/">
-          <img
-            src={
-              "https://rawcdn.githack.com/ProgrammerBhanu/bhanu-portfolio/331756c9838f1aa5ab0843b90bd97ab1aec0ef6b/src/Assets/logo1.png"
-            }
-            className="img-fluid logo"
-            alt="brand"
-          />
+          <span className="brand-mark">BS</span>
+          <span className="brand-name">Bhanu Solanki</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

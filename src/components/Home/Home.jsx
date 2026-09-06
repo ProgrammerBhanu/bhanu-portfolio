@@ -1,49 +1,85 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import { Container } from "react-bootstrap";
+import { AiOutlineDownload } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FiArrowUpRight, FiMapPin } from "react-icons/fi";
+import profileImage from "../../Assets/dp2.png";
+import resume from "../../Assets/Bhanu_Solanki_Experience.pdf";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import profileImage from "../../Assets/dp2.png";
+
+const skills = ["Java", "Spring Boot", ".NET", "Kafka", "GraphQL", "PostgreSQL"];
 
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
         <Particle />
-        <Container className="home-content">
-          <Row>
-            <Col md={7} className="home-header">
-              <img
-                src={profileImage}
-                style={{
-                  width: "170px",
-                  clipPath: "circle(48% at 50% 50%)",
-                }}
-                className="mydp"
-                alt="Profile"
-              />
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
+        <Container className="home-content professional-hero">
+          <div className="hero-copy">
+            <div className="hero-kicker">
+              <span className="status-dot" /> Software Engineer II at Omnicell
+            </div>
 
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> Bhanu Pratap Solanki</strong>
-              </h1>
+            <h1 className="hero-title">
+              Building reliable backend systems for
+              <span> real-world healthcare.</span>
+            </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
+            <p className="hero-summary">
+              I’m Bhanu Solanki, a backend engineer with 3+ years of experience
+              designing scalable, event-driven systems across Java and .NET.
+              I turn complex medication workflows into dependable software for
+              clinical teams.
+            </p>
+
+            <div className="hero-typewriter">
+              <Type />
+            </div>
+
+            <div className="hero-skills" aria-label="Core technologies">
+              {skills.map((skill) => (
+                <span key={skill}>{skill}</span>
+              ))}
+            </div>
+
+            <div className="hero-actions">
+              <a
+                className="primary-action"
+                href="https://www.linkedin.com/in/bhanu-pratap-solanki-58a74819a/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedinIn /> Connect on LinkedIn <FiArrowUpRight />
+              </a>
+              <a className="secondary-action" href={resume} target="_blank" rel="noreferrer">
+                <AiOutlineDownload /> View résumé
+              </a>
+            </div>
+
+            <p className="hero-location">
+              <FiMapPin /> Bengaluru, India · Building systems that clinicians can trust
+            </p>
+          </div>
+
+          <div className="hero-visual" aria-label="Bhanu Solanki profile highlights">
+            <div className="portrait-halo" aria-hidden="true" />
+            <div className="portrait-card">
+              <img src={profileImage} alt="Bhanu Solanki" />
+            </div>
+            <div className="floating-card floating-card-years">
+              <strong>3+</strong>
+              <span>years shipping</span>
+            </div>
+            <div className="floating-card floating-card-award">
+              <span className="award-mark">✦</span>
+              <div>
+                <strong>Spot Award</strong>
+                <span>Engineering impact</span>
               </div>
-            </Col>
-
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img src={homeLogo} alt="home pic" className="img-fluid" />
-            </Col>
-          </Row>
+            </div>
+          </div>
         </Container>
       </Container>
       <Home2 />

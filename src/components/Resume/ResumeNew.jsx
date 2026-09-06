@@ -2,14 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/Bhanu_Solanki_Resume.pdf";
+import pdf from "../../Assets/Bhanu_Solanki_Experience.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
-const resumeLink =
-  "https://rawcdn.githack.com/ProgrammerBhanu/My-Portfolio/b9fa1f5a093834aef1217b5cf41f2a74c4da792e/src/Assets/Bhanu_Solanki_Resume.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -30,7 +27,7 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={resumeLink}>
+          <Document file={pdf}>
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>

@@ -1,60 +1,40 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { TiHtml5 } from "react-icons/ti";
+import { FaJava } from "react-icons/fa";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiMysql
-} from "react-icons/di";
-import { SiCss3, SiRedux } from "react-icons/si";
+  SiApachekafka,
+  SiCsharp,
+  SiDocker,
+  SiDotNet,
+  SiGit,
+  SiGraphql,
+  SiMongodb,
+  SiPostgresql,
+  SiSpring
+} from "react-icons/si";
+
+const technologies = [
+  [<FaJava />, "Java"],
+  [<SiSpring />, "Spring Boot"],
+  [<SiCsharp />, "C#"],
+  [<SiDotNet />, ".NET"],
+  [<SiApachekafka />, "Kafka"],
+  [<SiGraphql />, "GraphQL"],
+  [<SiPostgresql />, "PostgreSQL"],
+  [<SiMongodb />, "MongoDB"],
+  [<SiDocker />, "Docker"],
+  [<SiGit />, "Git"]
+];
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <TiHtml5 />
-        <h5>HTML</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiCss3 />
-        <h5>CSS</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-        <h5>Javascript</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-        <h5>Nodejs</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-        <h5>MongoDB</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-        <h5>React</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-        <h5>Python</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedux />
-        <h5>Redux</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-        <h5>Git</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMysql />
-        <h5>Mysql</h5>
-      </Col>
+    <Row className="technology-grid">
+      {technologies.map(([icon, name]) => (
+        <Col xs={6} sm={4} md={2} className="tech-icons" key={name}>
+          {icon}
+          <h5>{name}</h5>
+        </Col>
+      ))}
     </Row>
   );
 }

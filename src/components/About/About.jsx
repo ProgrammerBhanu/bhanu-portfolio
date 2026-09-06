@@ -6,6 +6,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 // import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import aboutImage from "../../Assets/about.png";
 
 function About() {
   return (
@@ -22,7 +23,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              Beyond the <strong className="purple">code</strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -31,17 +32,17 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={"https://rawcdn.githack.com/ProgrammerBhanu/bhanu-portfolio/331756c9838f1aa5ab0843b90bd97ab1aec0ef6b/src/Assets/about.png"} alt="about" className="img-fluid" />
+            <img src={aboutImage} alt="Developer working at a desk" className="img-fluid" />
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Backend <strong className="purple">toolkit</strong>
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          <strong className="purple">Engineering</strong> tools
         </h1>
         <Toolstack />
 

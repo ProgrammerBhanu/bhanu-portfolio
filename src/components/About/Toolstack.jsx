@@ -1,36 +1,32 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
+  SiDocker,
   SiGithub,
-  SiVisualstudiocode,
-  SiJupyter,
+  SiIntellijidea,
+  SiJetbrains,
   SiPostman,
-  SiHeroku
+  SiVisualstudiocode
 } from "react-icons/si";
+
+const tools = [
+  [<SiGithub />, "GitHub"],
+  [<SiDocker />, "Docker"],
+  [<SiPostman />, "Postman"],
+  [<SiIntellijidea />, "IntelliJ IDEA"],
+  [<SiJetbrains />, "Rider"],
+  [<SiVisualstudiocode />, "VS Code"]
+];
 
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiGithub />
-        <h5>Github</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-        <h5>VS-Code</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiJupyter />
-        <h5>Jupyter</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-        <h5>Postman</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
-        <h5>Heroku</h5>
-      </Col>
+    <Row className="technology-grid tools-grid">
+      {tools.map(([icon, name]) => (
+        <Col xs={6} sm={4} md={2} className="tech-icons" key={name}>
+          {icon}
+          <h5>{name}</h5>
+        </Col>
+      ))}
     </Row>
   );
 }
