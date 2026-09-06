@@ -8,10 +8,13 @@ import resume from "../../Assets/Bhanu_Solanki_Experience.pdf";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import { getCompletedExperienceYears } from "../../utils/experience";
 
 const skills = ["Java", "Spring Boot", ".NET", "Kafka", "GraphQL", "PostgreSQL"];
 
 function Home() {
+  const experienceYears = getCompletedExperienceYears();
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -28,7 +31,7 @@ function Home() {
             </h1>
 
             <p className="hero-summary">
-              I’m Bhanu Solanki, a backend engineer with 3+ years of experience
+              I’m Bhanu Solanki, a backend engineer with {experienceYears}+ years of experience
               designing scalable, event-driven systems across Java and .NET.
               I turn complex medication workflows into dependable software for
               clinical teams.
@@ -69,8 +72,8 @@ function Home() {
               <img src={profileImage} alt="Bhanu Solanki" />
             </div>
             <div className="floating-card floating-card-years">
-              <strong>3+</strong>
-              <span>years shipping</span>
+              <strong>{experienceYears}+</strong>
+              <span>years of experience</span>
             </div>
             <div className="floating-card floating-card-award">
               <span className="award-mark">✦</span>

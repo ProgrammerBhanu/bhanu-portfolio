@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { FiArrowUpRight, FiCheckCircle, FiLayers, FiRadio, FiShield } from "react-icons/fi";
+import { getCompletedExperienceYears } from "../../utils/experience";
 
 const experience = [
   {
@@ -48,10 +49,12 @@ const expertise = [
 ];
 
 function Home2() {
+  const experienceYears = getCompletedExperienceYears();
+
   return (
     <main className="professional-home">
       <Container className="impact-strip" aria-label="Career highlights">
-        <div><strong>3+</strong><span>Years in backend engineering</span></div>
+        <div><strong>{experienceYears}+</strong><span>Years in backend engineering</span></div>
         <div><strong>2</strong><span>Core ecosystems: Java & .NET</span></div>
         <div><strong>1</strong><span>Spot Award for engineering impact</span></div>
       </Container>
